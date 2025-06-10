@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты - Цветочный магазин</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">Цветочный магазин</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="about.html">О нас</a></li>
+                <li><a href="catalog.html">Каталог</a></li>
+                <li><a href="delivery.html">Доставка</a></li>
+                <li><a href="reviews.html">Отзывы</a></li>
+                <li><a href="contacts.html" class="active">Контакты</a></li>
+            </ul>
+            <div class="header-right">
+                <div class="search">
+                    <input type="text" placeholder="Поиск...">
+                    <i class="fas fa-search"></i>
+                </div>
+                <div class="cart">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count">0</span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="contacts-page">
+            <div class="container">
+                <h1>Контакты</h1>
+
+                <div class="contacts-content">
+                    <div class="contact-info">
+                        <div class="contact-card">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <h3>Адрес</h3>
+                            <p>г. Москва, ул. Цветочная, д. 1</p>
+                            <p>БЦ "Флора", 3 этаж</p>
+                        </div>
+
+                        <div class="contact-card">
+                            <i class="fas fa-phone"></i>
+                            <h3>Телефон</h3>
+                            <p>8 800 200-40-70</p>
+                            <p>+7 (495) 123-45-67</p>
+                        </div>
+
+                        <div class="contact-card">
+                            <i class="fas fa-envelope"></i>
+                            <h3>Email</h3>
+                            <p>info@flowershop.ru</p>
+                            <p>support@flowershop.ru</p>
+                        </div>
+
+                        <div class="contact-card">
+                            <i class="fas fa-clock"></i>
+                            <h3>Режим работы</h3>
+                            <p>Пн-Пт: 9:00 - 21:00</p>
+                            <p>Сб-Вс: 10:00 - 20:00</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-form-container">
+                        <h2>Напишите нам</h2>
+                        <form class="contact-form">
+                            <div class="form-group">
+                                <label for="name">Ваше имя</label>
+                                <input type="text" id="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Телефон</label>
+                                <input type="tel" id="phone">
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Сообщение</label>
+                                <textarea id="message" rows="5" required></textarea>
+                            </div>
+                            <button type="submit" class="submit-button">Отправить</button>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="map-container">
+                    <h2>Как нас найти</h2>
+                    <div class="map">
+                        <!-- Здесь будет карта -->
+                        <img src="https://via.placeholder.com/1200x400" alt="Карта">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>О компании</h3>
+                <ul>
+                    <li><a href="about.html">О нас</a></li>
+                    <li><a href="delivery.html">Доставка</a></li>
+                    <li><a href="#payment">Оплата</a></li>
+                    <li><a href="contacts.html">Контакты</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Контакты</h3>
+                <p>Телефон: 8 800 200-40-70</p>
+                <p>Email: info@flowershop.ru</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-vk"></i></a>
+                    <a href="#"><i class="fab fa-telegram"></i></a>
+                    <a href="#"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Мы принимаем</h3>
+                <div class="payment-methods">
+                    <i class="fab fa-cc-visa"></i>
+                    <i class="fab fa-cc-mastercard"></i>
+                    <i class="fab fa-cc-mir"></i>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Цветочный магазин. Все права защищены.</p>
+        </div>
+    </footer>
+</body>
+</html> 

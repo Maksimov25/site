@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Каталог - Цветочный магазин</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">Цветочный магазин</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="about.html">О нас</a></li>
+                <li><a href="catalog.html" class="active">Каталог</a></li>
+                <li><a href="delivery.html">Доставка</a></li>
+                <li><a href="reviews.html">Отзывы</a></li>
+                <li><a href="contacts.html">Контакты</a></li>
+            </ul>
+            <div class="header-right">
+                <div class="search">
+                    <input type="text" placeholder="Поиск...">
+                    <i class="fas fa-search"></i>
+                </div>
+                <div class="cart">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count">0</span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="catalog-page">
+            <div class="container">
+                <h1>Каталог товаров</h1>
+                
+                <!-- Фильтры -->
+                <div class="filters">
+                    <div class="filter-group">
+                        <h3>Категории</h3>
+                        <ul>
+                            <li><a href="#" class="active">Все цветы</a></li>
+                            <li><a href="#">Розы</a></li>
+                            <li><a href="#">Тюльпаны</a></li>
+                            <li><a href="#">Пионы</a></li>
+                            <li><a href="#">Букеты</a></li>
+                        </ul>
+                    </div>
+                    <div class="filter-group">
+                        <h3>Цена</h3>
+                        <div class="price-range">
+                            <input type="range" min="0" max="10000" value="5000">
+                            <div class="price-inputs">
+                                <input type="number" placeholder="От" min="0">
+                                <input type="number" placeholder="До" max="10000">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Товары -->
+                <div class="products-grid">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="https://via.placeholder.com/300" alt="Букет роз">
+                            <div class="product-tags">
+                                <span class="tag new">Новинка</span>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3>Букет "Персиковый Жемчуг"</h3>
+                            <p class="price">4 990 ₽</p>
+                            <button class="add-to-cart">В корзину</button>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="https://via.placeholder.com/300" alt="Букет роз">
+                            <div class="product-tags">
+                                <span class="tag sale">Акция</span>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3>Букет "Рубиновые Розы"</h3>
+                            <p class="price">3 990 ₽</p>
+                            <button class="add-to-cart">В корзину</button>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="https://via.placeholder.com/300" alt="Букет роз">
+                        </div>
+                        <div class="product-info">
+                            <h3>Букет "Фрида Кало"</h3>
+                            <p class="price">7 990 ₽</p>
+                            <button class="add-to-cart">В корзину</button>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="https://via.placeholder.com/300" alt="Букет роз">
+                        </div>
+                        <div class="product-info">
+                            <h3>Букет "Весеннее Настроение"</h3>
+                            <p class="price">5 990 ₽</p>
+                            <button class="add-to-cart">В корзину</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Пагинация -->
+                <div class="pagination">
+                    <a href="#" class="active">1</a>
+                    <a href="#">2</a>
+                    <a href="#">3</a>
+                    <a href="#">4</a>
+                    <a href="#">5</a>
+                    <a href="#" class="next">Следующая</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>О компании</h3>
+                <ul>
+                    <li><a href="about.html">О нас</a></li>
+                    <li><a href="delivery.html">Доставка</a></li>
+                    <li><a href="#payment">Оплата</a></li>
+                    <li><a href="contacts.html">Контакты</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Контакты</h3>
+                <p>Телефон: 8 800 200-40-70</p>
+                <p>Email: info@flowershop.ru</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-vk"></i></a>
+                    <a href="#"><i class="fab fa-telegram"></i></a>
+                    <a href="#"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Мы принимаем</h3>
+                <div class="payment-methods">
+                    <i class="fab fa-cc-visa"></i>
+                    <i class="fab fa-cc-mastercard"></i>
+                    <i class="fab fa-cc-mir"></i>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Цветочный магазин. Все права защищены.</p>
+        </div>
+    </footer>
+</body>
+</html> 
